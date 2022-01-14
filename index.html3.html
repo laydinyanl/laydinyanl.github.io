@@ -1,0 +1,88 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="script.js"> </script>
+<link rel="stylesheet" href="main.css">
+<body>
+    
+    <h1>Registartion Form</h1>
+      <form id="reg">
+          <fieldset>
+                <legend>Personal info</legend>
+                <table>
+                    <tbody><tr>
+                        <td><label for="firstName">First Name</label></td>
+                        <td><input type="text" placeholder="Please enter your name" maxlength="10" value="Poghos" readonly="" id="firstName"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName">Last Name</label></td>
+                        <td><input type="text" id="lastName" required=""></td>
+                    </tr>
+                </tbody></table>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Passport data</legend>
+            <table>
+                <tbody><tr>
+                    <td>Gender &nbsp;</td>
+                    <td><label>Male<input type="radio" name="gender" value="1" checked=""></label></td>
+                    <td><label>Female<input type="radio" name="gender" value="2"></label></td>
+                </tr>
+                <tr>
+                    <td>Country &nbsp;</td>
+                    <td colspan="2">
+                        <select>
+                            <option disabled="" selected="">Please select your country</option>
+                            <option value="arm">Armenia</option>
+                            <option value="rus">Russia</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Birthday &nbsp;</td>
+                    <td colspan="2">
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Paspport scan &nbsp;</td>
+                    <td colspan="2">
+                        <input type="file">
+                    </td>
+                </tr>
+            </tbody></table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Additional info</legend>
+            <table>
+                <tbody><tr>
+                    <td><label for="email">Email</label></td>
+                    <td colspan="4"><input type="email" placeholder="Please enter your email" maxlength="10" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td colspan="4"><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td>About yourself</td>
+                    <td colspan="4"><textarea cols="20" rows="5" placeholder="Describe yourself"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>Sport <input type="checkbox" name="hobbie" value="Sport"></td>
+                    <td>Movie <input type="checkbox" name="hobbie" checked=""></td>
+                    <td>Music <input type="checkbox" name="hobbie"></td>
+                    <td>Games <input type="checkbox" name="hobbie" disabled=""></td>
+                </tr>
+            </tbody></table>
+        </fieldset>
+        <input type="submit" value="Send">
+    </form>
+    <input type="text" form="reg" required="">
+</body>
+</html>

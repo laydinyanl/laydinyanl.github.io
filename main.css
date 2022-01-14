@@ -1,0 +1,19 @@
+body {
+    background-color: aqua;
+    background-image: url(https://cutewallpaper.org/21/euphoria-wallpaper/Euphoria-wallpapers.jpg);
+
+}    h1 {
+   color: rgb(19, 27, 148);
+   text-align: center;
+   height: 70px;
+   width:60px ;
+}
+table {
+    color: rgb(0, 22, 148);
+    display: inline;
+    height: 60px;
+    width: 60px;
+}
+input {
+    color: rgb(0, 105, 241);
+}
